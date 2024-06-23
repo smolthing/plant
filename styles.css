@@ -29,18 +29,11 @@ img, video {
     font-family: monospace;
     background: none;
     display: none;
+    color: black;
 }
 
 #restartButton:active, #restartButton:hover {
     font-weight: bold;
-}
-
-#plantImage {
-    display: none;
-}
-
-#plantVideo {
-    display: none;
 }
 
 .secret-button {
