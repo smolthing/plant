@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
+
+img, video {
+    width: 80%;
+    max-width: 600px;
+}
+
+#restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-family: monospace;
+    background: none;
+    display: none;
+}
+
+#restartButton:active, #restartButton:hover {
+    font-weight: bold;
+}
+
+#plantImage {
+    display: none;
+}
+
+#plantVideo {
+    display: none;
+}
+
+.secret-button {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: transparent;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Show the button when not in test mode */
+:not(.test-mode) .secret-button {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
